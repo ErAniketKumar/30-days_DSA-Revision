@@ -33,6 +33,7 @@ int main()
     }
     vector<int> ans = leaders(arr);
 
+    cout << "Leader element of Array" << endl;
     for (int i = 0; i < ans.size(); i++)
     {
         cout << ans[i] << " ";

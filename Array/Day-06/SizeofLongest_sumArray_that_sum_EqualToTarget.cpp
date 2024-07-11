@@ -2,23 +2,23 @@
 using namespace std;
 
 // brootforce
-//  int subArraySize(vector<int> &arr, int target)
-//  {
-//      int res = 0;
-//      for (int i = 0; i < arr.size(); i++)
-//      {
-//          int sum = 0;
-//          for (int j = i; j < arr.size(); j++)
-//          {
-//              sum += arr[j];
-//              if (sum == target)
-//              {
-//                  res = max(res, ((j - i) + 1));
-//              }
-//          }
-//      }
-//      return res;
-//  }
+ int subArraySize(vector<int> &arr, int target)
+ {
+     int res = 0;
+     for (int i = 0; i < arr.size(); i++)
+     {
+         int sum = 0;
+         for (int j = i; j < arr.size(); j++)
+         {
+             sum += arr[j];
+             if (sum == target)
+             {
+                 res = max(res, ((j - i) + 1));
+             }
+         }
+     }
+     return res;
+ }
 
 // wrong ans;
 //  int subArraySize(vector<int> &arr, int target) {

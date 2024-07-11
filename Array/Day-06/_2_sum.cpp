@@ -18,6 +18,7 @@ pair<int, int> findIdxThatElementEqualToTarget(vector<int> &arr, int target)
             return {i, (*it).second};
         }
     }
+    // if not found
     return {-1, -1};
 }
 int main()
@@ -34,6 +35,6 @@ int main()
     int target;
     cin >> target;
     pair<int, int> ans = findIdxThatElementEqualToTarget(arr, target);
-    cout << ans.first << " " <<ans.second << endl;
+    cout << ans.first << " " << ans.second << endl;
     return 0;
 }

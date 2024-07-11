@@ -25,6 +25,7 @@ int main()
 {
 
     int size;
+    cout << "Enter Size" << endl;
     cin >> size;
     vector<int> arr;
     for (int i = 0; i < size; i++)
